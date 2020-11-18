@@ -24,6 +24,10 @@ static NSString *identify = @"DynamicTableViewCell";
     self.title = @"高度动态布局";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+    });
 }
 
 #pragma mark - UITableViewDataSource
