@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0294A63256617F1003726FF /* UIDevice+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = B0294A62256617F1003726FF /* UIDevice+Extention.m */; };
 		B0AFAC4A255E5BBC00497829 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AFAC49255E5BBC00497829 /* AppDelegate.m */; };
 		B0AFAC50255E5BBC00497829 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AFAC4F255E5BBC00497829 /* ViewController.m */; };
 		B0AFAC53255E5BBC00497829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AFAC51255E5BBC00497829 /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		36E1670C35080C351050EC61 /* Pods-DynamicHeightView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicHeightView.release.xcconfig"; path = "Target Support Files/Pods-DynamicHeightView/Pods-DynamicHeightView.release.xcconfig"; sourceTree = "<group>"; };
+		B0294A61256617F1003726FF /* UIDevice+Extention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extention.h"; sourceTree = "<group>"; };
+		B0294A62256617F1003726FF /* UIDevice+Extention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extention.m"; sourceTree = "<group>"; };
 		B0AFAC45255E5BBC00497829 /* DynamicHeightView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicHeightView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AFAC48255E5BBC00497829 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0AFAC49255E5BBC00497829 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				B0AFAC90255E5C7500497829 /* DynamicCollectionView.m */,
 				B0AFAC89255E5C2F00497829 /* DynamicCollectionViewCell.h */,
 				B0AFAC8A255E5C2F00497829 /* DynamicCollectionViewCell.m */,
+				B0294A61256617F1003726FF /* UIDevice+Extention.h */,
+				B0294A62256617F1003726FF /* UIDevice+Extention.m */,
 				B0AFAC51255E5BBC00497829 /* Main.storyboard */,
 				B0AFAC54255E5BBE00497829 /* Assets.xcassets */,
 				B0AFAC56255E5BBE00497829 /* LaunchScreen.storyboard */,
@@ -337,6 +342,7 @@
 				B0AFAC85255E5C1D00497829 /* DynamicTableViewCell.m in Sources */,
 				B0AFAC4A255E5BBC00497829 /* AppDelegate.m in Sources */,
 				B0AFAC8B255E5C2F00497829 /* DynamicCollectionViewCell.m in Sources */,
+				B0294A63256617F1003726FF /* UIDevice+Extention.m in Sources */,
 				B0AFAC5B255E5BBE00497829 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

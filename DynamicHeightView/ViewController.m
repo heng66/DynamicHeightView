@@ -7,6 +7,8 @@
 
 #import "ViewController.h"
 #import "DynamicTableViewCell.h"
+#import <Masonry/Masonry.h>
+#import "UIDevice+Extention.h"
 
 static NSString *identify = @"DynamicTableViewCell";
 
@@ -24,10 +26,18 @@ static NSString *identify = @"DynamicTableViewCell";
     self.title = @"高度动态布局";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
+    [self setupSubViews];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         [self.tableView reloadData];
     });
+}
+
+- (void)setupSubViews {
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top).offset(SAFE_HEIGHT);
+        make.left.right.bottom.equalTo(self.view);
+    }];
 }
 
 #pragma mark - UITableViewDataSource
@@ -52,7 +62,7 @@ static NSString *identify = @"DynamicTableViewCell";
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.backgroundColor = UIColor.whiteColor;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.delegate = self;
